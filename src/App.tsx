@@ -9,6 +9,7 @@ function App() {
   
   const { order, tip, setTip, addItem, removeItem,  placeOder } = useOrder()
   
+  cosnt [state, dispatch] = useReducer(orderReducer, initialState)
   return (
     <>
       <header className=" bg-teal-400 py-5">
